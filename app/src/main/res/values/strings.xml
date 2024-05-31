@@ -1,0 +1,25 @@
+<!-- SPDX-FileCopyrightText: 2024 Infineon Technologies AG -->
+<!-- SPDX-License-Identifier: MIT -->
+
+<resources>
+
+    <string name="splashscreen_contentdescription">Infineon example app</string>
+
+    <!--NBT Brand Protection -->
+    <!-- Titles -->
+    <string name="app_title">NBT Brand Protection</string>
+    <string name="app_label">NBT BP</string>
+    <string name="app_subtitle">OPTIGA&#8482;\u00A0Authenticate\u00A0NBT</string>
+    <!-- Notifications -->
+    <!-- App specific strings -->
+    <string name="string_card_tap">Please tap your mobile phone to the OPTIGA&#8482;\u00A0Authenticate\u00A0NBT to verify its authenticity!</string>
+    <string name="string_to_verify">Tap to verify your product!\n</string>
+    <string name="string_bad_verification">Could not be verified!\n</string>
+    <string name="string_good_verification">Product verified!\n</string>
+    <string name="string_retry">Please retry!\n</string>
+    <string name="string_empty_file">Brand protection configuration invalid!\n</string>
+    <string name="string_error">An error occurred, please retry!\n</string>
+
+    <string name="scan_info">Please make sure to give the app essential location permissions</string>
+
+</resources>

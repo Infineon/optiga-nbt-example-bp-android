@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- SPDX-FileCopyrightText: 2024 Infineon Technologies AG -->
+<!-- SPDX-License-Identifier: MIT -->
+
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/Start" >
+        <Constraint
+            android:id="@+id/image_card"
+            motion:layout_constraintEnd_toStartOf="@+id/guideline_v_V"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textView_cardTap"
+            motion:layout_constraintDimensionRatio="1.4"
+            motion:layout_constraintStart_toStartOf="@+id/guideline_v_IV" />
+        <Constraint
+            android:id="@+id/image_phone"
+            motion:layout_constraintEnd_toStartOf="@+id/guideline_v_II"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textView_cardTap"
+            motion:layout_constraintDimensionRatio="1.4"
+            motion:layout_constraintStart_toStartOf="@+id/guideline_v_I" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/End" >
+        <Constraint
+            motion:layout_constraintDimensionRatio="1.4"
+            android:layout_height="0dp"
+            motion:layout_constraintEnd_toStartOf="@+id/guideline_v_IV"
+            motion:layout_constraintStart_toStartOf="@+id/guideline_v_I"
+            android:layout_width="0dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textView_cardTap"
+            android:id="@+id/image_phone" />
+        <Constraint
+            motion:layout_constraintDimensionRatio="1.4"
+            android:layout_height="0dp"
+            motion:layout_constraintEnd_toStartOf="@+id/guideline_v_V"
+            motion:layout_constraintStart_toStartOf="@+id/guideline_v_II"
+            android:layout_width="0dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textView_cardTap"
+            android:id="@+id/image_card" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/Start"
+        motion:constraintSetEnd="@+id/End"
+        motion:autoTransition="animateToEnd"
+        motion:duration="2000"
+        motion:motionInterpolator="linear">
+        <KeyFrameSet />
+    </Transition>
+    <Transition
+        motion:constraintSetStart="@+id/End"
+        motion:constraintSetEnd="@+id/Start"
+        motion:autoTransition="animateToEnd"
+        motion:motionInterpolator="easeOut"
+        motion:pathMotionArc="none" >
+        <KeyFrameSet />
+    </Transition>
+</MotionScene>
