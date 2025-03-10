@@ -1,13 +1,13 @@
 <!--
-SPDX-FileCopyrightText: 2024 Infineon Technologies AG
+SPDX-FileCopyrightText: Copyright (c) 2024-2025 Infineon Technologies AG
 SPDX-License-Identifier: MIT
 -->
 
 # OPTIGA™ Authenticate NBT BP Application for Android
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
-[![REUSE Compliance Check](https://github.com/Infineon/optiga-nbt-example-bp-android/actions/workflows/linting-test.yml/badge.svg?branch=main)](https://github.com/Infineon/optiga-nbt-example-bp-android/actions/workflows/linting-test.yml)
-
+[![REUSE compliance check](https://github.com/Infineon/optiga-nbt-example-bp-android/actions/workflows/linting-test.yml/badge.svg?branch=main)](https://github.com/Infineon/optiga-nbt-example-bp-android/actions/workflows/linting-test.yml)
+[![Android build](https://github.com/Infineon/optiga-nbt-example-bp-android/actions/workflows/android-build.yml/badge.svg?branch=main)](https://github.com/Infineon/optiga-nbt-example-bp-android/actions/workflows/android-build.yml)
 
 This is the *NBT Brand Protection* mobile phone app, a Java-based *Android Studio* project which showcases the OPTIGA™ Authenticate NBT in the *brand protection (BP) with offline authentication* use case.
 
@@ -69,7 +69,7 @@ Using the public-key cryptography and the public-key infrastructure (PKI), the m
 1. The end user launches the *NBT Brand Protection* application on the mobile phone and taps the NFC tag
 2. The mobile phone application reads the certificate from the NDEF file
 3. The mobile phone validates the certificate using the root CA public-key
-4. The mobile phone performs an active tag authentication by sending a challenge and retrieving a signature 
+4. The mobile phone performs an active tag authentication by sending a challenge and retrieving a signature
 5. The mobile phone verifies this signature and displays the result
 
 ![Brand Protection Flow](./docs/images/nbt_flow_bp.png)
@@ -116,4 +116,7 @@ In case of questions regarding this repository and its contents, refer to [MAINT
 
 Please see our [LICENSE](LICENSE) for copyright and license information.
 
-This project follows the [REUSE](https://reuse.software/) approach, so copyright and licensing information is available for every file (including third party components) either in the file header, an individual *.license file or the .reuse/dep5 file. All licenses can be found in the [LICENSES](LICENSES) folder.
+This project follows the [REUSE](https://reuse.software/) approach, so copyright and licensing
+information is available for every file (including third party components) either in the file
+header, an individual *.license file or the [REUSE.toml](REUSE.toml) file. All licenses can be found in the
+[LICENSES](LICENSES) folder.
